@@ -35,16 +35,18 @@
             <dl class="layui-nav-child">
               <dd class="">
               <dd class="">
-                <a href="javascript:;" _href="./question-list.html">
-                  <cite>问题列表</cite>
-                </a>
+              <router-link to="/welcome">问题列表</router-link>
+                <!--<a href="javascript:;" _href="./question-list.html">-->
+                  <!--<cite>问题列表</cite>-->
+                <!--</a>-->
               </dd>
               </dd>
               <dd class="">
               <dd class="">
-                <a href="javascript:;" _href="./question-del.html">
-                  <cite>删除问题</cite>
-                </a>
+                <router-link to="/user">删除问题</router-link>
+                <!--<a href="javascript:;" _href="./question-del.html">-->
+                  <!--<cite>删除问题</cite>-->
+                <!--</a>-->
               </dd>
               </dd>
             </dl>
@@ -317,7 +319,8 @@
       </ul>
       <div class="layui-tab-content site-demo site-demo-body">
         <div class="layui-tab-item layui-show">
-          <iframe frameborder="0" src="/welcome.html" class="x-iframe"></iframe>
+          <!--<iframe frameborder="0" src="/welcome.html" class="x-iframe"></iframe>-->
+          <router-view></router-view>
         </div>
       </div>
     </div>
